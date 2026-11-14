@@ -1,0 +1,26 @@
+=== blueutil ===
+{
+  "address" : "97-43-bd-1d-3f-85",
+  "recentAccessDate" : "2026-11-04T17:34:09+05:30",
+  "paired" : true,
+  "RSSI" : -54,
+  "rawRSSI" : -54,
+  "favourite" : false,
+  "connected" : true,
+  "name" : "NuR_SONICPOP50",
+  "slave" : false
+}
+address: 97-43-bd-1d-3f-85, connected (master, -54 dBm), not favourite, paired, name: "NuR_SONICPOP50", recent access date: 2026-11-04 12:04:09 +0000
+
+=== BLE scan (20s) ===
+F3471AD9-8C3D-3DC2-30A5-2899089CB1AD  rssi= -42  name=''  uuids=[]  mfr={'0x4c': '100531189915b3'}
+CAFF82A3-D88F-7A6B-4FA3-82A57E7DCE92  rssi= -62  name='Stanmore II'  uuids=['0000fe8f-0000-1000-8000-00805f9b34fb']  mfr={'0x912': ''}
+3F9C4502-FAC2-2901-06CC-627A1BC9ABFE  rssi= -72  name=''  uuids=[]  mfr={'0x4c': '1006081d02c63848'}
+2B0A0CFA-52A7-0373-4DB0-663F4662204B  rssi= -76  name=''  uuids=[]  mfr={}
+64A24391-E6E0-D9D8-4978-71CCEFB41918  rssi= -80  name=''  uuids=[]  mfr={'0x4c': '0c0e009a01f375cd2cd5975e6007064a10064a1dc0dce868'}
+93A5C2E8-0FDD-986C-92D2-C47914336550  rssi= -81  name=''  uuids=[]  mfr={'0x4c': '0c0e009a01f375cd2cd5975e6007064a10064a1dc0dce868'}
+3ECC1C7F-E9D3-610C-9A89-54192A0BDC5C  rssi= -82  name=''  uuids=[]  mfr={'0x4c': '12020001'}
+9C75A033-26F0-34FE-3DD7-5D424089AC1D  rssi= -88  name=''  uuids=[]  mfr={'0x4c': '0908130ac0a800081b581608004840acf4adae9a'}
+8F8C1F8F-982F-F9AD-9964-B7140392159D  rssi= -90  name=''  uuids=[]  mfr={'0x4c': '10053c187b3970'}
+
+Speaker NOT advertising over BLE -> classic-only (no GATT control service).

@@ -1,0 +1,85 @@
+devices:
+  samplerate: 44100
+  chunksize: 1024
+  enable_rate_adjust: true
+  capture:
+    type: CoreAudio
+    channels: 2
+    device: "BlackHole 2ch"
+  playback:
+    type: CoreAudio
+    channels: 2
+    device: "NuR_SONICPOP50"
+filters:
+  preamp:
+    type: Gain
+    parameters:
+      gain: -7.3
+  highpass:
+    type: BiquadCombo
+    parameters:
+      type: ButterworthHighpass
+      freq: 175.0
+      order: 4
+  peq1:
+    type: Biquad
+    parameters:
+      type: Peaking
+      freq: 569.0
+      gain: -7.2
+      q: 1.09
+  peq2:
+    type: Biquad
+    parameters:
+      type: Peaking
+      freq: 1363.0
+      gain: 6.0
+      q: 1.5
+  peq3:
+    type: Biquad
+    parameters:
+      type: Peaking
+      freq: 2835.0
+      gain: -7.5
+      q: 1.9
+  peq4:
+    type: Biquad
+    parameters:
+      type: Peaking
+      freq: 3145.0
+      gain: 6.0
+      q: 0.5
+  peq5:
+    type: Biquad
+    parameters:
+      type: Peaking
+      freq: 3629.0
+      gain: -7.8
+      q: 4.0
+  peq6:
+    type: Biquad
+    parameters:
+      type: Peaking
+      freq: 9772.0
+      gain: -8.3
+      q: 1.01
+  peq7:
+    type: Biquad
+    parameters:
+      type: Peaking
+      freq: 11084.0
+      gain: -12.0
+      q: 1.49
+pipeline:
+  - type: Filter
+    channels: [0, 1]
+    names:
+      - preamp
+      - highpass
+      - peq1
+      - peq2
+      - peq3
+      - peq4
+      - peq5
+      - peq6
+      - peq7

@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+bin/
+*.wav
+*.log
+eq_state
+.DS_Store

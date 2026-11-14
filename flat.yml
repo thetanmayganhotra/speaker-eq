@@ -1,0 +1,22 @@
+devices:
+  samplerate: 44100
+  chunksize: 1024
+  enable_rate_adjust: true
+  capture:
+    type: CoreAudio
+    channels: 2
+    device: "BlackHole 2ch"
+  playback:
+    type: CoreAudio
+    channels: 2
+    device: "NuR_SONICPOP50"
+filters:
+  match:
+    type: Gain
+    parameters:
+      gain: -6.7
+pipeline:
+  - type: Filter
+    channels: [0, 1]
+    names:
+      - match
